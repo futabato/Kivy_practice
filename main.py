@@ -7,24 +7,30 @@ class MainScreen(BoxLayout):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         
-        self.orientation = "vertical"
-        
         btn = Button(text="hello")
         self.add_widget(btn)
         
         btn2 = Button(text="exeryone")
         self.add_widget(btn2)
         
+        #BoxLayoutというWidget
+        b1 = BoxLayout()
+        b1.orientation = "vertical"
+        
+        #b1に3つのボタンを追加
         btn3 = Button(text="how")
-        self.add_widget(btn3)
-        
         btn4 = Button(text="are")
-        self.add_widget(btn4)
-        
         btn5 = Button(text="you")
-        self.add_widget(btn5)
         
-        btn6 = Button(text="touday?")
+        #b1にボタンを追加
+        b1.add_widget(btn3)
+        b1.add_widget(btn4)
+        b1.add_widget(btn5)
+        
+        #MainScreenにb1を追加
+        self.add_widget(b1)
+        
+        btn6 = Button(text="today?")
         self.add_widget(btn6)
         
 

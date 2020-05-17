@@ -14,8 +14,14 @@ class LoginScreen(GridLayout):
 
         # パスワードの入力欄を追加
         self.add_widget(Label(text="Password:"))
-        self.password = TextInput(multiline=False)
+        self.password = TextInput(multiline=False, password = True) #`password = True`で入力が`*`表示になる
         self.add_widget(self.password)
+        
+        # 二重パスワードを追加
+        self.add_widget(Label(text = "Two Factor Auth:"))
+        self.tfa = TextInput(multiline = False, password = True)
+        self.add_widget(self.tfa)
+        
 class IntroKivy(App):
     def build(self):
         return LoginScreen()

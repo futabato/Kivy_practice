@@ -2,8 +2,8 @@ from kivy.app import App
 from kivy.uix.widget import Widget
 
 class ClickInput(Widget):
-    def on_touch_down(self, touch):
-        print(touch.spos)
+    def on_touch_up(self, touch):
+        print("Released!", touch)
         
 class IntroKivy(App):
     def build(self):

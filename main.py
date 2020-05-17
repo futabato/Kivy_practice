@@ -2,7 +2,7 @@ from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
 
-# 画面上の見た目や昨日を構成するクラス
+# 画面上の見た目や機能を構成するクラス
 class MainScreen(BoxLayout):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)

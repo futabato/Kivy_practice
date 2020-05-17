@@ -7,6 +7,8 @@ class MainScreen(BoxLayout):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         
+        self.orientation = "vertical"
+        
         btn = Button(text="hello")
         self.add_widget(btn)
         

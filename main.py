@@ -10,6 +10,8 @@ class MainScreen(BoxLayout):
         btn = Button(text="hello")
         self.add_widget(btn)
         
+        btn2 = Button(text="exeryone")
+        self.add_widget(btn2)
 
 # アプリを構成するクラス
 class MainApp(App):

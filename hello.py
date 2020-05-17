@@ -5,6 +5,6 @@ from kivy.uix.button import Button
 
 class MyApp(App):
     def build(self):
-        return Button(text='Hello from t_o_d')
+        return Button(text='Hello World!')
 
 MyApp().run()

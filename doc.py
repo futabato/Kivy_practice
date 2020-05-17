@@ -1,4 +1,6 @@
-
+from kivy.app import App
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.button import Button
 class MyClass(objsct):
     def __init__(self):
         super(MyClass, self).__init__()
